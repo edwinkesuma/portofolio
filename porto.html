@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Edwin Kesuma - Fullstack Developer</title>
+    <link rel="icon" type="image/svg+xml" href="./logo.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#8B5CF6',
+                        dark: '#0F172A'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #020617;
+            color: white;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #60A5FA, #A78BFA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 9999px;
+            filter: blur(120px);
+            opacity: 0.3;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <h1 class="text-xl font-bold tracking-wide">edwin<span class="text-primary">.</span></h1>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm text-slate-300">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+                <a href="#experience" class="hover:text-white transition">Experience</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+            
+            <a href="#contact"
+               class="bg-primary hover:bg-blue-500 transition px-5 py-2 rounded-xl text-sm font-medium shadow-lg shadow-blue-500/20">
+                Hire Me
+            </a>
+        </nav>
+    </header>
+    
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center relative overflow-hidden px-6">
+        
+        <div class="hero-glow bg-blue-500 top-20 left-10"></div>
+        <div class="hero-glow bg-purple-500 bottom-0 right-0"></div>
+        
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center w-full pt-24">
+            
+            <div>
+                <p class="text-primary font-medium mb-4">Mobile & Fullstack Developer</p>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                    Building modern
+                    <span class="gradient-text">full stack app experiences</span>
+                </h1>
+                
+                <p class="text-slate-400 text-lg leading-relaxed mb-8 max-w-xl">
+                    Flutter developer with 3+ years of experience building scalable mobile applications. Passionate
+                    about clean architecture, backend development, and creating beautiful user experiences.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects"
+                       class="bg-primary hover:bg-blue-500 px-6 py-3 rounded-2xl font-semibold transition shadow-lg shadow-blue-500/30">
+                        View Projects
+                    </a>
+                    
+                    <a href="#contact"
+                       class="border border-slate-700 hover:border-slate-500 px-6 py-3 rounded-2xl font-semibold transition">
+                        Contact Me
+                    </a>
+                </div>
+                
+                <div class="flex gap-8 mt-12 text-slate-400">
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">10+</h3>
+                        <p>Projects Built</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">Flutter</h3>
+                        <p>Main Expertise</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    
+    <!-- About -->
+    <section id="about" class="py-28 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            
+            <div>
+                <p class="text-primary font-semibold mb-3">About Me</p>
+                <h2 class="text-4xl font-bold mb-6">Building mobile and full-stack solutions that solve real business problems.</h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6">
+                    I'm a Flutter Developer with 3+ years of professional experience building production-ready mobile applications. I specialize in creating intuitive user experiences, integrating complex business requirements, and delivering reliable solutions used by real users.
+                </p>
+                
+                <p class="text-slate-400 leading-relaxed">
+                    To broaden my capabilities as a software engineer, I have been expanding into backend development with Java and Spring Boot, frontend development with React and TypeScript, and native Android development using Kotlin and Jetpack Compose.
+                </p>
+            </div>
+            
+            <div class="glass rounded-[2rem] p-8 border border-slate-800/60">
+                
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></div>
+                    
+                    <p class="text-sm tracking-[0.3em] text-slate-400 uppercase">
+                        Quick Info
+                    </p>
+                </div>
+                
+                <div class="space-y-6">
+                    
+                    <!-- Item -->
+                    <div class="group">
+                        <div class="flex items-center justify-between gap-6">
+                            
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+                                    <i data-lucide="map-pinned"
+                                       class="w-5 h-5 text-emerald-400"></i>
+                                </div>
+                                
+                                <span class="text-slate-400">
+                        Based in
+                    </span>
+                            </div>
+                            
+                            <span class="font-semibold text-white">
+                    Indonesia
+                </span>
+                        </div>
+                        
+                        <div class="h-px bg-slate-800 mt-6"></div>
+                    </div>
+                    
+                    <!-- Item -->
+                    <div class="group">
+                        <div class="flex items-center justify-between gap-6">
+                            
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center">
+                                    <i data-lucide="crosshair"
+                                       class="w-5 h-5 text-purple-400"></i>
+                                </div>
+                                
+                                <span class="text-slate-400">
+                        Focus
+                    </span>
+                            </div>
+                            
+                            <span class="font-semibold text-white">
+                    Fullstack & Mobile
+                </span>
+                        </div>
+                        
+                        <div class="h-px bg-slate-800 mt-6"></div>
+                    </div>
+                    
+                    <!-- Item -->
+                    <div class="group">
+                        <div class="flex items-center justify-between gap-6">
+                            
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center">
+                                    <i data-lucide="briefcase-business"
+                                       class="w-5 h-5 text-cyan-400"></i>
+                                </div>
+                                
+                                <span class="text-slate-400">
+                        Available for
+                    </span>
+                            </div>
+                            
+                            <span class="font-semibold text-primary">
+                    Full Time / Freelance ✓
+                </span>
+                        </div>
+                        
+                        <div class="h-px bg-slate-800 mt-6"></div>
+                    </div>
+                    
+                    <!-- Item -->
+                    <div class="group">
+                        <div class="flex items-center justify-between gap-6">
+                            
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
+                                    <i data-lucide="languages"
+                                       class="w-5 h-5 text-blue-400"></i>
+                                </div>
+                                
+                                <span class="text-slate-400">
+                        Languages
+                    </span>
+                            </div>
+                            
+                            <span class="font-semibold text-white">
+                    ID / EN
+                </span>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    
+    <!-- Skills -->
+    <section id="skills" class="py-28 px-6 bg-slate-950/60">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center mb-16">
+                <p class="text-primary font-semibold mb-3">Skills</p>
+                <h2 class="text-4xl font-bold">Technologies I Use</h2>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
+                    <i class="devicon-flutter-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">Flutter</h3>
+                    <p class="text-slate-400 text-sm">Building cross-platform mobile applications</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
+                    <i class="devicon-dart-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">Dart</h3>
+                    <p class="text-slate-400 text-sm">Primary language for Flutter development</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-red-500/10">
+                    <i class="devicon-java-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">Java</h3>
+                    <p class="text-slate-400 text-sm">Object-oriented language for backend development</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-green-500/10">
+                    <i class="devicon-spring-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">Spring Boot</h3>
+                    <p class="text-slate-400 text-sm">Scalable REST API development</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-purple-500/10">
+                    <i class="devicon-kotlin-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">Kotlin</h3>
+                    <p class="text-slate-400 text-sm">Native Android application development</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
+                    <i class="devicon-jetpackcompose-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">Jetpack Compose</h3>
+                    <p class="text-slate-400 text-sm">Declarative Android UI development</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-yellow-500/10">
+                    <i class="devicon-javascript-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">JavaScript</h3>
+                    <p class="text-slate-400 text-sm">Dynamic web application development</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
+                    <i class="devicon-typescript-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">TypeScript</h3>
+                    <p class="text-slate-400 text-sm">Strongly typed JavaScript development</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
+                    <i class="devicon-react-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">React</h3>
+                    <p class="text-slate-400 text-sm">Component-based frontend development</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
+                    <i class="devicon-tailwindcss-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">Tailwind</h3>
+                    <p class="text-slate-400 text-sm">Rapid and responsive UI styling</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-orange-500/10">
+                    <i class="devicon-git-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">Git</h3>
+                    <p class="text-slate-400 text-sm">Source code management</p>
+                </div>
+                
+                <div class="glass rounded-3xl p-8 text-center hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-cyan-500/10">
+                    <i class="devicon-postgresql-plain colored text-5xl mb-4"></i>
+                    <h3 class="font-bold text-xl mb-1">Sql</h3>
+                    <p class="text-slate-400 text-sm">Relational database management</p>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    
+    <!-- Experience -->
+    <section id="experience" class="py-28 px-6 bg-slate-950/40">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="mb-16 text-center">
+                <p class="text-primary font-semibold mb-3">Experience</p>
+                <h2 class="text-4xl font-bold">Professional Journey</h2>
+            </div>
+            
+            <div class="relative border-l border-slate-800 ml-4 space-y-12">
+                
+                <div class="relative pl-10 group">
+                    <div class="absolute -left-[10px] top-2 w-5 h-5 rounded-full bg-blue-500 shadow-lg shadow-blue-500/50 group-hover:scale-125 transition duration-300"></div>
+                    
+                    <div class="glass rounded-3xl p-8 hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-blue-500/10">
+                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold">Flutter Developer</h3>
+                                <p class="text-primary">RevoApps</p>
+                            </div>
+                            
+                            <span class="px-4 py-2 rounded-full bg-blue-500/10 text-blue-300 text-sm border border-blue-500/20">
+                                Jul 2022 - Dec 2025
+                            </span>
+                        </div>
+                        
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            Developed and maintaining cross-platform mobile applications published on Google Play Store and Apple App Store. Skilled in building scalable Flutter features, refactoring codebases for better performance and maintainability, integrating Firebase services and REST APIs, and collaborating with backend, QA, and business teams to deliver stable production-ready applications. Also experienced in leading small development teams through task coordination, code reviews, and mentoring junior developers.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-sm">Flutter</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-sm">Firebase</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-sm">REST API</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-sm">Provider</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative pl-10 group">
+                    <div class="absolute -left-[10px] top-2 w-5 h-5 rounded-full bg-purple-500 shadow-lg shadow-purple-500/50 group-hover:scale-125 transition duration-300"></div>
+                    
+                    <div class="glass rounded-3xl p-8 hover:-translate-y-2 transition duration-300 hover:shadow-2xl hover:shadow-purple-500/10">
+                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold">Android Developer Intern</h3>
+                                <p class="text-purple-300">Widya Robotics</p>
+                            </div>
+                            
+                            <span class="px-4 py-2 rounded-full bg-purple-500/10 text-purple-300 text-sm border border-purple-500/20">
+                                Jun 2020 - Nov 2020
+                            </span>
+                        </div>
+                        
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            Developed Android chat application interfaces and front-end features, integrating APIs alongside backend engineers, and contributing to debugging, testing, and application improvements in a collaborative development environment.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-sm">Java</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-sm">Android SDK</span>
+                            <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-sm">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        
+        </div>
+    </section>
+    
+    <!-- Projects -->
+    <section id="projects" class="py-28 px-6">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="mb-16">
+                <p class="text-primary font-semibold mb-3">Projects</p>
+                <h2 class="text-4xl font-bold">Featured Work</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="glass rounded-[2rem] overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="p-8">
+                        
+                        <span class="mb-4 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-600/20 to-red-600/20 border border-orange-500/20 px-4 py-1.5 text-sm font-medium text-orange-300">
+                            🚧  In Development
+                        </span>
+                        
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-xs">Spring Boot</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">React</span>
+                            <span class="px-3 py-1 bg-red-500/20 text-red-300 rounded-full text-xs">Java</span>
+                            <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-xs">PostgreSQL</span>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mb-4">Top Up Platform</h3>
+                        
+                        <p class="text-slate-400 leading-relaxed mb-6">
+                            Building a full-stack digital top-up platform from scratch using Spring Boot, React, and PostgreSQL. The project focuses on scalable backend architecture, secure authentication, transaction management, and modern frontend development while following industry best practices.
+                        </p>
+                        
+                        <div class="flex gap-3 mt-5">
+                            <a
+                                    href="https://github.com/edwinkesuma/Spring-Edma-Store"
+                                    class="mono text-xs text-primary hover:opacity-75 transition"
+                                    target="_blank"
+                            >Backend on GitHub ↗</a
+                            >
+                            <span
+                                    class="mono text-xs text-primary"
+                            >·</span
+                            >
+                            <a
+                                    href="https://github.com/edwinkesuma/React-Edma-Store"
+                                    class="mono text-xs text-primary hover:opacity-75 transition"
+                                    target="_blank"
+                            >Frontend on GitHub ↗</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass rounded-[2rem] overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="p-8">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Flutter</span>
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs">Firebase</span>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mb-4">RevoSHINE</h3>
+                        
+                        <p class="text-slate-400 leading-relaxed mb-6">
+                            Built and maintained a cross-platform e-commerce mobile application using Flutter with a
+                            strong focus on UI/UX and customer experience. Developed features for product browsing,
+                            promotional campaigns, transactions, and push notifications while ensuring smooth
+                            performance and usability across Android and iOS platforms.
+                        </p>
+                        
+                        <div class="flex gap-3 mt-5">
+                            <a
+                                    href="https://play.google.com/store/apps/details?id=app.revo.shine"
+                                    class="mono text-xs text-primary hover:opacity-75 transition"
+                                    target="_blank"
+                            >Google Play Store ↗</a
+                            >
+                            <span
+                                    class="mono text-xs text-primary"
+                            >·</span
+                            >
+                            <a
+                                    href="https://apps.apple.com/us/app/revoshine/id6478515472"
+                                    class="mono text-xs text-primary hover:opacity-75 transition"
+                                    target="_blank"
+                            >Apple App Store ↗</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass rounded-[2rem] overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="p-8">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Flutter</span>
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs">Firebase</span>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mb-4">tianDe Beroun</h3>
+                        
+                        <p class="text-slate-400 leading-relaxed mb-6">
+                            Developed and maintained a large-scale international e-commerce mobile application using
+                            Flutter for both Android and iOS platforms. Implemented core e-commerce features including
+                            product catalog, shopping cart, checkout flow, authentication, and order management.
+                            Collaborated with cross-functional teams to ensure application performance, stability, and
+                            seamless user experience across platforms.
+                        </p>
+                        
+                        <div class="flex gap-3 mt-5">
+                            <a
+                                    href="https://play.google.com/store/apps/details?id=com.tiandeberoun"
+                                    class="mono text-xs text-primary hover:opacity-75 transition"
+                                    target="_blank"
+                            >Google Play Store ↗</a
+                            >
+                            <span
+                                    class="mono text-xs text-primary"
+                            >·</span
+                            >
+                            <a
+                                    href="https://apps.apple.com/gb/app/tiande-beroun/id1643245996"
+                                    class="mono text-xs text-primary hover:opacity-75 transition"
+                                    target="_blank"
+                            >Apple App Store ↗</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass rounded-[2rem] overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="p-8">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Flutter</span>
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs">Firebase</span>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mb-4">RevoMV Woocommerce MultiVendor</h3>
+                        
+                        <p class="text-slate-400 leading-relaxed mb-6">
+                            Developed and maintained a multivendor e-commerce mobile application using Flutter for
+                            Android and iOS platforms. Built features that enabled users to create and manage online
+                            stores, upload product listings, and handle vendor-related operations within the platform.
+                            Contributed to improving application functionality, scalability, and user experience across
+                            multiple business flows.
+                        </p>
+                        
+                        <div class="flex gap-3 mt-5">
+                            <a
+                                    href="https://play.google.com/store/apps/details?id=com.revoapps.multivendor"
+                                    class="mono text-xs text-primary hover:opacity-75 transition"
+                                    target="_blank"
+                            >Google Play Store ↗</a
+                            >
+                            <span
+                                    class="mono text-xs text-primary"
+                            >·</span
+                            >
+                            <a
+                                    href="https://apps.apple.com/us/app/revomultivendor/id1600401080"
+                                    class="mono text-xs text-primary hover:opacity-75 transition"
+                                    target="_blank"
+                            >Apple App Store ↗</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass rounded-[2rem] overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="p-8">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs">Flutter</span>
+                            <span class="px-3 py-1 bg-orange-500/20 text-orange-300 rounded-full text-xs">Firebase</span>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mb-4">Revo POS for Woocommerce</h3>
+                        
+                        <p class="text-slate-400 leading-relaxed mb-6">
+                            Developed and maintained a mobile point-of-sale (POS) application integrated with
+                            WooCommerce, designed to help businesses manage in-store and online sales through a single
+                            platform. Built features for product management, inventory tracking, barcode scanning, order
+                            management, customer management, coupons, and real-time synchronization with WooCommerce
+                            systems. Focused on delivering a smooth and scalable POS experience suitable for retail
+                            stores, online shops, cafes, grocery businesses, and other commercial use cases across
+                            Android platforms.
+                        </p>
+                        
+                        <div class="flex gap-3 mt-5">
+                            <a
+                                    href="https://play.google.com/store/apps/details?id=com.revoapps.pos"
+                                    class="mono text-xs text-primary hover:opacity-75 transition"
+                                    target="_blank"
+                            >Google Play Store ↗</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact" class="py-28 px-6">
+        <div class="max-w-4xl mx-auto text-center glass rounded-[3rem] p-12">
+            
+            <p class="text-primary font-semibold mb-4">Contact</p>
+            
+            <h2 class="text-5xl font-bold mb-6">
+                Let's work together.
+            </h2>
+            
+            <p class="text-slate-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+                Interested in collaborating or hiring me for your next project? Feel free to reach out through email or
+                social media.
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:edwin.kesuma.ek21@gmail.com"
+                   class="bg-primary hover:bg-blue-500 transition px-8 py-4 rounded-2xl font-semibold">
+                    Send Email
+                </a>
+                
+                <a href="https://github.com/edwinkesuma" target="_blank"
+                   class="border border-slate-700 hover:border-slate-500 transition px-8 py-4 rounded-2xl font-semibold">
+                    GitHub
+                </a>
+                
+                <a href="https://www.linkedin.com/in/edwin-kesuma" target="_blank"
+                   class="border border-slate-700 hover:border-slate-500 transition px-8 py-4 rounded-2xl font-semibold">
+                    LinkedIn
+                </a>
+            </div>
+        
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 px-6 text-center text-slate-500 text-sm">
+        © 2026 Edwin Kesuma. Built with love.
+    </footer>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        lucide.createIcons();
+
+        // Mobile animation effect
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                }
+            });
+        }, {threshold: 0.1});
+
+        document.querySelectorAll('section').forEach((section) => {
+            section.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-1000');
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
